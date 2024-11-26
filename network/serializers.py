@@ -5,11 +5,10 @@ from .models import NetworkNode, Product
 class NetworkNodeSerializer(serializers.ModelSerializer):
     class Meta:
         model = NetworkNode
-        fields = "__all__"
-        read_only_fields = ("debt",)
+        fields = '__all__'
 
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = "__all__"
+        fields = '__all__'

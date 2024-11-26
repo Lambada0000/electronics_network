@@ -3,8 +3,8 @@ from rest_framework.routers import DefaultRouter
 from .views import NetworkNodeViewSet
 
 router = DefaultRouter()
-router.register("network_nodes", NetworkNodeViewSet)
+router.register(r'network_nodes', NetworkNodeViewSet)
 
 urlpatterns = [
-    path("", include(router.urls)),
+    path('', include(router.urls)),
 ]
